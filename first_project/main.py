@@ -1,3 +1,4 @@
-#This is Lizzy Saldanas first project
+#This is Lizzy Saldanas, Hello World
 
-print("alo world")
+input("what is your name?: ")
+print("Hello, " + input + "!")
