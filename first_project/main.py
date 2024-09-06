@@ -1,4 +1,4 @@
-#This is Lizzy Saldanas first project
+#Lizzy Saldana, Hello World
 
 name = input("What is your name?: ")
 
