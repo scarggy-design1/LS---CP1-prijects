@@ -11,6 +11,6 @@ age2 = int(age) #will now convert age to an integer and age2
 fn2 = int(fn) #favorite number is now going to be treated as an integer
 h2 = float(h) #Height will be converted to a float 
 
-print("age: ", age2)
-print("favorite number: ", fn2)
-print("height: ", h2)
+print("age went from ", age, "to:", age2)
+print("favorite number went from ", fn, "to:", fn2)
+print("Your height went from ", h, "to:", h2)
