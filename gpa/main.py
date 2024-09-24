@@ -12,3 +12,4 @@ g8 = float(input("Type in your number grade for eighth period: "))
 gpa = (g1+g2+g3+g4+g5+g6+g7+g8)/8
 
 print("your average grade is: ", gpa)
+
