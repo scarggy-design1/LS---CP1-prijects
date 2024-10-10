@@ -1,6 +1,6 @@
 #this is lizzy saldanas what is happening assignment.
 
-class BankAccount:
+class BankAccount: #the bank account that is where everything below is happening (the bank account the user creates and edits)
     def __init__(self, account_number, balance=0):
         self.account_number = account_number
         self.balance = balance
@@ -17,7 +17,7 @@ class BankAccount:
             return True
         return False
 
-    def get_balance(self):
+    def get_balance(self): #Returns what your balance is.
         return self.balance
 
 def create_account():
@@ -27,7 +27,7 @@ def create_account():
 
 def main():
     accounts = {}
-    while True:
+    while True: #while the main function is running and true, it'll go through all the code below.
         print("\n1. Create Account")    #These lines from 31-35 are all the first prints that appear on screen. Each choice has a corressponding number and therefore a different function.
         print("2. Deposit")
         print("3. Withdraw")
@@ -41,7 +41,7 @@ def main():
             accounts[account.account_number] = account
             print(f"Account {account.account_number} created successfully!")
         
-        elif choice in ['2', '3', '4']:
+        elif choice in ['2', '3', '4']: #runs if your choice is 2,3, or 4
             account_number = input("Enter account number: ")
             if account_number in accounts:
                 account = accounts[account_number]
@@ -53,7 +53,7 @@ def main():
                         print("Invalid deposit amount.")
                 elif choice == '3': #if you pick number 3 you are now choosing the option to withdraw money
                     amount = float(input("Enter withdrawal amount: "))
-                    if account.withdraw(amount):
+                    if account.withdraw(amount):# 
                         print(f"Withdrawn ${amount:.2f} successfully!")
                     else:
                         print("Invalid withdrawal amount or insufficient funds.")
@@ -62,7 +62,7 @@ def main():
             else:
                 print("Account not found.") #If you havent created an account yet then this will appear if you try to withdraw or deposit money from an invalid account.
         
-        elif choice == '5':
+        elif choice == '5': #if you pick 5 as your answer then this code will run. It is the end.
             print("Thank you for using our banking system. Goodbye!")
             break
         
