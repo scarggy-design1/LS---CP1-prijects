@@ -57,9 +57,10 @@ def play_game():
                     find_treasure()
                     treasure_found=True
         elif choice==4:
-            print("You decide to leave the forest. Game over!")
-            return
+                print("You decide to leave the forest. Game over!")
+                return
         if treasure_found:
             print("Congratulations! You've won the game!")
-        if __name__=="__main__":
-            play_game()
+
+if __name__=="__main__":
+    play_game()
