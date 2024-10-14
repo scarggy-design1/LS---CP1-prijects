@@ -35,7 +35,7 @@ def face_challenge():
         return True
     else:
         print("You fail to overcome the challenge.")
-    return False
+        return False
 
 def play_game():
     display_intro()
