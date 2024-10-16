@@ -1,8 +1,8 @@
 #This is Lizzy Saldana's 'What are these numbers'? assignment
 
-prompt = int(input("Pick a number between 1200-1400: "))
+prompt = float(input("Pick a number between 1200-1400: "))
 
-if prompt >=1200 and prompt<=1400:
+if prompt >=1200.00 and prompt<=1400.00:
     txt = "{:.4f}"
     print("Your number is also", txt.format(prompt))
 
