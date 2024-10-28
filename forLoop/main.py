@@ -2,9 +2,9 @@
 
 num = int(input("Please choose a number: "))
 for x in range(1,num+1):
+    print("Loop has happened ", x, " times")
     print(num, "multiplication table:")
-    print(num,
-          ''' 
+    print('''
 1  |''' ,num*1, '''
 2  |''' ,num*2, '''
 3  |''' ,num*3, '''
@@ -16,9 +16,8 @@ for x in range(1,num+1):
 9  |''' ,num*9, '''
 10 |''' ,num*10, '''
 11 |''' ,num*11, '''
-12 |''' ,num*12.
+12 |''' ,num*12
     )
-    break
 
 
 
