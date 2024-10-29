@@ -1,4 +1,4 @@
-#this is lizzy saldanas for loop profiency assignment
+#this is lizzy saldanas for Multiplication Table
 
 num = int(input("Please choose a number: "))
 for x in range(1,num+1):
