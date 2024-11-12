@@ -3,12 +3,14 @@
 text = input("Pick a word: ")
 
 def ciper(x):
-    check = x[::-1]
-    print(check)
+    check = ord(x)
+    done = check+1
+    print(done)
 
 ciper(text)
-    
 
     
  
-
+s = "hello"
+a = list(s)
+print(a)
