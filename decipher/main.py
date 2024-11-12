@@ -1,8 +1,14 @@
 #This is Lizzy saldanas deciphering assignment
-       
-alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j','k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
+text = input("Pick a word: ")
 
-#prompt = input("Type a word...: ")
+def ciper(x):
+    check = x[::-1]
+    print(check)
 
-#def cipher(prompt):
+ciper(text)
+    
+
+    
+ 
+
