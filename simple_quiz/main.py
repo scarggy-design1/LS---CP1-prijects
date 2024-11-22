@@ -1,8 +1,23 @@
 #This is Lizzy Saldana's simple quiz assignment
 score = 0
+question = True
 correct = 'correct! Next question. '
 incorrect= 'Wrong. Next question. '
 print("Welcome to a fairly easy 5 question quiz!")
+
+def different_question():
+    if question == False:
+        import random
+        new = random.randint(1,6)
+        if new == 1: 
+             qv2 = input(''' what is 5x5?:
+                    a. 50
+                    b. 25
+                    c. 20
+                    d. 55
+                        ''')
+            if
+
 
 q1 = input('''What is the name of the best teacher of all time?:
            a. Mr. C
