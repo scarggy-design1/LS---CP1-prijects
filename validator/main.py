@@ -3,13 +3,11 @@ password = True
 x = ["@", "#", "$", "%", "*", "&"]
 num = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
-while password == True:
+while password:
     word = input("What is your password?: ")
-    s = word
-    convert = list(s)
-    length = len(convert)
-    if x in convert:
-        if num in convert:
-            if length >= 8:
-                print("Your password is secure enough.")
-                break
+    convert = list(word)
+    if convert in x and num:
+        length = len(convert)
+        if length >= 8:
+            print("Your password is secure enough.")
+            break
