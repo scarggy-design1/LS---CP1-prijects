@@ -16,13 +16,13 @@ def different_question():
                     c. 20
                     d. 55
                         ''')
-            if
 
 
-q1 = input('''What is the name of the best teacher of all time?:
+
+q1 = input('''What is the name of the best math teacher of all time?:
            a. Mr. C
            b. Mr. M
-           c. Miss LaRose
+           c. Mrs. Cannon!
            d. Mr. L
                 ''')
 
