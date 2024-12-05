@@ -6,18 +6,19 @@ def computer():
     choice = random.randint(1,3)
     if choice == 1:
         print("computer chooses Rock")
-        return 1
+ 
     if choice == 2:
         print("computer chooses Paper")
-        return 2
+
     if choice == 3:
         print("computer chooses scissors")
-        return 3
+
+    return choice
+
         
     
 
 def user():
-
     ask = input("""Pick:
                     a. ROCK
                     b. PAPER
@@ -67,5 +68,7 @@ def outcome():
 
 while True:
     user()
+    if user() == 'd':
+        break
     computer()
     outcome()
