@@ -1,6 +1,5 @@
 #This is Lizzy Saldana's simple quiz assignment
 score = 0
-question = True
 correct = 'correct! Next question. '
 incorrect= 'Wrong. Next question. '
 print("Welcome to a fairly easy 5 question quiz!")

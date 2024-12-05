@@ -6,14 +6,13 @@ def computer():
     choice = random.randint(1,3)
     if choice == 1:
         print("computer chooses Rock")
- 
+        return 1
     if choice == 2:
         print("computer chooses Paper")
-
+        return 1
     if choice == 3:
         print("computer chooses scissors")
-
-    return choice
+        return 1
 
         
     
@@ -39,6 +38,7 @@ def user():
         
     if ask == 'd':
         print(score)
+        print("You chose to quit.")
         return 'd'
        
 
@@ -68,7 +68,5 @@ def outcome():
 
 while True:
     user()
-    if user() == 'd':
-        break
     computer()
     outcome()
