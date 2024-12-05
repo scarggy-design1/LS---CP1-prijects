@@ -1,22 +1,24 @@
 #This is lizzy Saldana's rock paper scissors assignment
+import random 
 
-score = 0
+
+
 def computer():
-    import random 
     choice = random.randint(1,3)
     if choice == 1:
         print("computer chooses Rock")
         return 1
-    if choice == 2:
+    elif choice == 2:
         print("computer chooses Paper")
-        return 1
-    if choice == 3:
+        return 2
+    elif choice == 3:
         print("computer chooses scissors")
-        return 1
+        return 3
+    else:
+        print("something went wrong", choice)
 
         
     
-
 def user():
     ask = input("""Pick:
                     a. ROCK
@@ -26,47 +28,49 @@ def user():
                     """)
     if ask == 'a':
         print("you chose rock!")
-        return 'a'
-        
-    if ask == 'b':
+        return 'a'   
+    elif ask == 'b':
         print("you chose paper!")
-        return 'b'
-            
-    if ask == 'c':
+        return 'b'    
+    elif ask == 'c':
         print("you chose scissors!")
-        return 'c'
-        
-    if ask == 'd':
-        print(score)
+        return 'c'   
+    elif ask == 'd':
         print("You chose to quit.")
         return 'd'
+    else:
+        print("please pick a valid choice.")
        
-
+score = 0
 def outcome(): 
-    if user() == 'a' and computer() == 1 or user() == 'b' and computer() == 2 or user() == 'c' and computer() == 3:
+    player = user()
+    comp = computer()
+    global score
+    if player == 'a' and comp == 1 or player == 'b' and comp == 2 or player == 'c' and comp == 3:
         print("tie!")
         print(score)
-    if user() == 'a' and computer() == 2:
+    elif player == 'a' and comp == 2:
         print("computer wins")
-    if user() == 'a' and computer() == 3:
+    elif player == 'a' and comp == 3:
         print("user wins")
         score=+1
         print(score)
-    if user() == 'b' and computer() == 1:
+    elif player == 'b' and comp == 1:
         print("user wins!")
         score=+1
         print(score)
-    if user() == 'b' and computer() == 3:
+    elif player == 'b' and comp == 3:
         print("Computer wins!")
-    if user() == 'c' and computer() == 1:
+    elif player == 'c' and comp == 1:
         print("Computer wins")
-    if user() == 'c' and computer() == 2:
+    elif player == 'c' and comp == 2:
         print("user wins!")
         score=+1
+        print(score)
+    else:
         print(score)
 
 
 while True:
-    user()
-    computer()
     outcome()
+    print("outcome finished")
