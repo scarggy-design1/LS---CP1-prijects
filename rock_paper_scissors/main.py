@@ -46,21 +46,21 @@ def outcome():
     if user() == 'a' and computer() == 1 or user() == 'b' and computer() == 2 or user() == 'c' and computer() == 3:
         print("tie!")
         print(score)
-    elif user() == 'a' and computer() == 2:
+    if user() == 'a' and computer() == 2:
         print("computer wins")
-    elif user() == 'a' and computer() == 3:
+    if user() == 'a' and computer() == 3:
         print("user wins")
         score=+1
         print(score)
-    elif user() == 'b' and computer() == 1:
+    if user() == 'b' and computer() == 1:
         print("user wins!")
         score=+1
         print(score)
-    elif user() == 'b' and computer() == 3:
+    if user() == 'b' and computer() == 3:
         print("Computer wins!")
-    elif user() == 'c' and computer() == 1:
+    if user() == 'c' and computer() == 1:
         print("Computer wins")
-    elif user() == 'c' and computer() == 2:
+    if user() == 'c' and computer() == 2:
         print("user wins!")
         score=+1
         print(score)
