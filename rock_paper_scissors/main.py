@@ -53,11 +53,11 @@ def outcome():
         print("computer wins")
     elif player == 'a' and comp == 3:
         print("user wins")
-        score=+1
+        score+=1
         print(score)
     elif player == 'b' and comp == 1:
         print("user wins!")
-        score=+1
+        score+=1
         print(score)
     elif player == 'b' and comp == 3:
         print("Computer wins!")
@@ -65,12 +65,14 @@ def outcome():
         print("Computer wins")
     elif player == 'c' and comp == 2:
         print("user wins!")
-        score=+1
+        score+=1
         print(score)
-    else:
+    elif player == 'd':
         print(score)
+        return 'done'
 
 
 while True:
-    outcome()
-    print("outcome finished")
+    if outcome() == 'done':
+        break
+    
