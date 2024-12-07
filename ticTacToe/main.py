@@ -16,47 +16,47 @@ def place():
         if grid[0] == 'X':
             return 'taken'
         grid[0] = "X"
-        choice.remove[0]
+        choice.pop[0]
     elif options == 2:
         if grid[0] == 'X':
             return 'taken'
         grid[1] = 'X'
-        choice.remove[1]
+        choice.pop[1]
     elif options == 3:
         if grid[0] == 'X':
             return 'taken'
         grid[2] = 'X'
-        choice.remove[2]
+        choice.pop[2]
     elif options == 4:
         if grid[0] == 'X':
             return 'taken'
         grid[3] = 'X'
-        choice.remove[3]
+        choice.pop[3]
     elif options == 5:
         if grid[0] == 'X':
             return 'taken'
         grid[4] = 'X'
-        choice.remove[4]
+        choice.pop[4]
     elif options == 6:
         if grid[0] == 'X':
             return 'taken'
         grid[5] = 'X'
-        choice.remove[5]
+        choice.pop[5]
     elif options == 7:
         if grid[0] == 'X':
             return 'taken'
         grid[6] = 'X'
-        choice.remove[6]
+        choice.pop[6]
     elif options == 8:
         if grid[0] == 'X':
             return 'taken'
         grid[7] = 'X'
-        choice.remove[7]
+        choice.pop[7]
     elif options == 9:
         if grid[0] == 'X':
             return 'taken'
         grid[8] = 'X'
-        choice.remove[8]
+        choice.pop[8]
 
 
 def computer():
@@ -65,56 +65,57 @@ def computer():
     if comp_choice == 1:
         if grid[0] == 'X' or grid[0] == 'O':
             return 'taken'
-        grid[0] = "X"
-        choice.remove[0]
+        grid[0] = "O"
+        choice.pop[0]
 
     elif comp_choice == 2:
         if grid[1] == 'X' or grid[1] == 'O':
             return 'taken'
-        grid[1] = 'X'
-        choice.remove[1]
+        grid[1] = "O"
+        choice.pop[1]
 
     elif choice == 3:
         if grid[2] == 'X' or grid[2] == 'O':
             return 'taken'
-        grid[2] = 'X'
-        choice.remove[2]
+        grid[2] = "O"
+        choice.pop[2]
 
     elif choice == 4:
         if grid[3] == 'X' or grid[3] == 'O':
             return 'taken'
-        grid[3] = 'X'
-        choice.remove[3]
+        grid[3] = "O"
+        choice.pop[3]
         
     elif choice == 5:
         if grid[4] == 'X' or grid[4] == 'O':
             return 'taken'
-        grid[4] = 'X'
-        choice.remove[4]
+        grid[4] = "O"
+        choice.pop[4]
 
     elif choice == 6:
         if grid[5] == 'X' or grid[5] == 'O':
             return 'taken'
-        grid[5] = 'X'
-        choice.remove[5]
+        grid[5] = "O"
+        choice.pop[5]
 
     elif choice == 7:
         if grid[6] == 'X' or grid[6] == 'O':
             return 'taken'
-        grid[6] = 'X'
-        choice.remove[6]
+        grid[6] = "O"
+        choice.pop[6]
 
     elif choice == 8:
         if grid[7] == 'X' or grid[7] == 'O':
             return 'taken'
-        grid[7] = 'X'
-        choice.remove[7]
+        grid[7] = "O"
+        choice.pop[7]
 
     elif choice == 9:
         if grid[8] == 'X' or grid[8] == 'O':
             return 'taken'
-        grid[8] = 'X'
-        choice.remove[8]
+        grid[8] = "O"
+        choice.pop[8]
+
 
         
 
@@ -126,7 +127,10 @@ while True:
         place()
     elif player_place == 'quit':
         break
-    if comp== 'taken':
+    if comp == 'taken':
         computer()
+    print(grid[0], """|""", grid[1], """|""", grid[2],
+          grid[3], """|""", grid[4], """|""", grid[5],
+          grid[6], """|""", grid[7], """|""", grid[8])
 
  
