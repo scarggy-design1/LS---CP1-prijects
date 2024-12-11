@@ -1,9 +1,11 @@
 #This is lizzy Saldana's tic tac toe game
 import random
 print("welcome to tic tac toe! You will be X's and the computer is the O.")
+x = 0
+y = 1
+z = 3
 
-
-grid = [" "," ", ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+grid = ["1 "," ", ' ', ' ', ' ', '4 ', ' ', ' ', '5 ']
 
 
 choice = ["1. top left", "2. top middle", "3. top right", "4. middle left", "5. exact middle", "6. middle right", "7. bottom left", "8. bottom middle", "9. bottom right"]
@@ -199,13 +201,12 @@ def outcome():
 
 
 while True:
-    print(""" 
-    """,
-            grid[0],"""|""", grid[1],"""|""", grid[2],"""
-    """,
-            grid[3],"""|""", grid[4],"""|""", grid[5], """
-    """,
-            grid[6],"""|""", grid[7],"""|""", grid[8])
+    for i in range(1,4):
+        print(grid[x],"""|""", grid[y],"""|""", grid[z])
+        x+=1
+        y+=1
+        z+=1
+    
     if outcome() == 'break':
         break
    
