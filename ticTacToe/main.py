@@ -87,7 +87,7 @@ def computer():
     elif comp_choice == 2:
         if grid[0][1] == 'X' or grid[0][1] == 'O':
             return 'taken'
-        grid[0][0] = 'O'
+        grid[0][1] = 'O'
         choice.remove("2. top middle")
 
     elif choice == 3:
@@ -193,18 +193,20 @@ def outcome():
     elif grid[0][1] and grid[1][1] and grid[2][1] == 'O':
         print("O's win!")
         return 'break'
+
     
 
 
 
 while True:
-    print(""" 
-    """,
-            grid[0][0],"""|""", grid[0][1],"""|""", grid[0][2],"""
-    """,
-            grid[1][0],"""|""", grid[1][1],"""|""", grid[1][2], """
-    """,
-            grid[2][0],"""|""", grid[2][1],"""|""", grid[2][2])
+    while outcome() != 'break':
+        print(""" 
+        """,
+                grid[0][0],"""|""", grid[0][1],"""|""", grid[0][2],"""
+        """,
+                grid[1][0],"""|""", grid[1][1],"""|""", grid[1][2], """
+        """,
+                grid[2][0],"""|""", grid[2][1],"""|""", grid[2][2])
     if outcome() == 'break':
         break
    
