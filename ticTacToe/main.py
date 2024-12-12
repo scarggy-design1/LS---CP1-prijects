@@ -3,9 +3,9 @@ import random
 print("welcome to tic tac toe! You will be X's and the computer is the O.")
 
 
-grid = [[" 1", "2 ", " 3"], 
+grid = [["1 ", "2 ", "3 "], 
         ["4 ", "5 ", "6 "], 
-        [" 7", " 8", " 9"]]
+        ["7 ", "8 ", "9 "]]
 
 
 choice = ["1. top left", "2. top middle", "3. top right", "4. middle left", "5. exact middle", "6. middle right", "7. bottom left", "8. bottom middle", "9. bottom right"]
